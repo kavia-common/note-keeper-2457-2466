@@ -1,0 +1,89 @@
+.note-form {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem 2rem 1.5rem 2rem;
+  box-shadow: 0 4px 18px rgba(37,99,235,.11);
+  max-width: 415px;
+  margin: 2.5rem auto 1.3rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3em;
+  border: 1.5px solid #e9ecef;
+  transition: box-shadow 0.16s, border 0.14s;
+}
+
+.note-form h2 {
+  text-align: left;
+  margin: 0 0 0.4em 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.note-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.note-form-field label {
+  font-size: 1rem;
+  color: #2563EB;
+  font-weight: 600;
+}
+
+.note-form-field input,
+.note-form-field textarea {
+  border: 1.7px solid #bcd0f7;
+  border-radius: 8px;
+  padding: 9.5px 12px;
+  font-size: 1rem;
+  background: #f9fafb;
+  color: #111827;
+  transition: border 0.16s;
+  outline: none;
+  font-family: inherit;
+}
+
+.note-form-field input:focus,
+.note-form-field textarea:focus {
+  border-color: #2563eb;
+  background: #eef3fc;
+}
+
+.note-form-error {
+  color: #EF4444;
+  background: #FEE2E2;
+  padding: 0.65em 0.9em;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+.note-form-actions {
+  display: flex;
+  gap: 1em;
+  justify-content: flex-end;
+}
+
+.note-form-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 0.65em 1.5em;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 1px 5px rgba(80,109,224,0.09);
+  transition: background 0.18s, color 0.13s, border 0.16s;
+  cursor: pointer;
+}
+
+.note-form-btn:hover:not(:disabled) {
+  opacity: 0.95;
+  box-shadow: 0 3px 11px rgba(37,99,235,.13);
+}
+
+@media (max-width: 550px) {
+  .note-form {
+    padding: 1.1rem;
+    max-width: 98vw;
+  }
+}
